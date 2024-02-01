@@ -1,0 +1,6 @@
+you can add stack to both in the layout ith name option to edit ith
+
+or can do it in the file itself 
+if you do it that way then that means it will override it!!
+
+also you dont need name on the stack.scrrenn in the file

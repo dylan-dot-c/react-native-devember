@@ -2,6 +2,7 @@
     "expo": {
         "name": "devember-text",
         "slug": "devember-text",
+        "scheme": "devember",
         "version": "1.0.0",
         "orientation": "portrait",
         "icon": "./assets/icon.png",
@@ -22,17 +23,18 @@
             }
         },
         "web": {
-            "favicon": "./assets/favicon.png"
+            "favicon": "./assets/favicon.png",
+            "bundler": "metro"
         },
         "plugins": [
             "expo-font",
-
             [
                 "expo-font",
                 {
                     "fonts": "node_modules/@expo-google-fonts/inter/Inter_100Thin.ttf"
                 }
-            ]
+            ],
+            "expo-router"
         ]
     }
 }

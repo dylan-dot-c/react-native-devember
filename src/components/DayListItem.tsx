@@ -1,14 +1,19 @@
-import { Text, View, StyleSheet } from "react-native";
+import { Text, View, StyleSheet, Pressable } from "react-native";
 
 interface Props {
     day: number;
 }
 
+import { Link } from "expo-router";
+
 const DayListItem = ({ day }: Props) => {
     return (
-        <View style={styles.box}>
-            <Text style={styles.text}>{day}</Text>
-        </View>
+        <Link href={`/day${day}`} asChild>
+            {/* pressable is a pressable view kinda */}
+            <Pressable style={styles.box}>
+                <Text style={styles.text}>{day}</Text>
+            </Pressable>
+        </Link>
     );
 };
 
@@ -27,6 +32,10 @@ const styles = StyleSheet.create({
         color: "#9b4521",
         fontSize: 70,
         fontFamily: "Amaticbold",
+    },
+    link: {
+        fontFamily: "Inter",
+        marginTop: 10,
     },
 });
 

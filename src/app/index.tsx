@@ -6,7 +6,7 @@ import {
     FlatList,
     ActivityIndicator,
 } from "react-native";
-import DayListItem from "./src/components/DayListItem";
+import DayListItem from "../components/DayListItem";
 import { useFonts, Inter_900Black } from "@expo-google-fonts/inter";
 import {
     AmaticSC_400Regular,
@@ -14,6 +14,7 @@ import {
 } from "@expo-google-fonts/amatic-sc";
 import * as SplashScreen from "expo-splash-screen";
 import { useEffect } from "react";
+import { Stack } from "expo-router";
 
 SplashScreen.preventAutoHideAsync();
 

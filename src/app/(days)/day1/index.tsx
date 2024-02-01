@@ -1,12 +1,19 @@
-import { Text, View } from "react-native";
+import { Text, View, StyleSheet } from "react-native";
 import { Stack } from "expo-router";
-const About = () => {
+const DayDetails = () => {
     return (
         <View>
             <Stack.Screen options={{ title: "Day 1" }} />
-            <Text>Hello There</Text>
+            <Text style={styles.text}>Hello There</Text>
         </View>
     );
 };
 
-export default About;
+const styles = StyleSheet.create({
+    text: {
+        fontSize: 40,
+        fontFamily: "Amaticbold",
+    },
+});
+
+export default DayDetails;
